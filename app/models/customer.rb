@@ -4,7 +4,7 @@ class Customer < ApplicationRecord
     validates :full_name, presence: true
 
     # https://stackoverflow.com/questions/38611405/email-validation-in-ruby-on-rails
-    validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
+    validates :email_address, format: { with: URI::MailTo::EMAIL_REGEXP }, allow_blank: true
 
     # From Ransack errors:
     def self.ransackable_associations(auth_object = nil)
