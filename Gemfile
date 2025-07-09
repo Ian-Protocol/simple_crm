@@ -27,7 +27,7 @@ gem 'draper'
 gem 'pundit'
 
 # Testing!
-gem 'cssbundling-rails'
+# gem 'cssbundling-rails'
 gem "sprockets-rails"
 gem 'sassc-rails'
 

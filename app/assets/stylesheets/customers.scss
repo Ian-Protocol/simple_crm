@@ -1,0 +1,17 @@
+.customer-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+}
+
+.customer-image {
+  margin: 15px;
+}
+
+.customer-image img {
+  border-radius: 10px;
+}
