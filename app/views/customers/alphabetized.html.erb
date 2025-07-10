@@ -1,0 +1,13 @@
+<h1>Customers - Alphabetized</h1>
+
+<nav>
+  <%= link_to "All Customers", root_path %> |
+  <%= link_to "Alphabetized", customers_alphabetized_path %> |
+  <%= link_to "Missing Email", customers_missing_email_path %>
+</nav>
+
+<div class="customers-grid">
+    <% @customers.each do |customer| %>
+        <%= render "customer", customer: customer %>
+    <% end %>
+</div>

@@ -12,5 +12,10 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  root "admin/dashboard#index"
+  # root "admin/dashboard#index"
+  root "customers#index"
+
+  # https://guides.rubyonrails.org/routing.html
+  get "customers/alphabetized", to: "customers#alphabetized", as: "customers_alphabetized"
+  get "customers/missing_email", to: "customers#missing_email", as: "customers_missing_email"
 end

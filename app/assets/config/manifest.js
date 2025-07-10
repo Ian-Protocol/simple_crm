@@ -1,1 +1,2 @@
-//= link active_admin.css
+//= link_directory ../stylesheets .scss
+//= link application.css
